@@ -1,0 +1,44 @@
+/* .form{
+    background:url(src\assets\book.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.5;} */
+
+   
+
+.hero {
+    position: relative; 
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content:"";
+      background-image: url('src\assets\background.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.6;
+}
+
+form {
+  position:relative;
+  color: #ffffff;  
+  /* font-size: 14rem; */
+  /* line-height: 0.5; */
+  text-align:justify;
+}
+h3{
+    position:relative;
+    color: #ffffff;  
+     font-size:7ch; 
+    line-height: 0.5;
+    text-align:justify;
+    padding-right: 5px;
+  }

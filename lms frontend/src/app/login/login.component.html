@@ -1,0 +1,19 @@
+<div class="container col-md-6 offset-mid-3 form hero">
+  <h3 class="text-center">Login here</h3>
+<form  autocomplete="off" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+    <!-- <div class="card" style="width: 18rem;"> -->
+      <!-- <img src="src\assets\Login1.jpg" class="card-img-top col align-self-center" alt="Login"> -->
+    <!-- </div> -->
+    <div class="mb-3">
+      <label class="form-label" style="margin-top: 100px;">Username</label>
+      <input type="text" name="username" ngModel class="form-control" id="loginUsername" placeholder="Enter your username">
+      <div id="emailHelp" class="form-text">Username provided by the library admin.</div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" name="password" ngModel class="form-control" id="loginPassword" placeholder="Enter your password">
+    </div>
+    <input type="submit" value="Login" class="btn btn-primary d-grid gap-2 col-6 mx-auto"/>
+    <br>
+  </form>
+</div>
